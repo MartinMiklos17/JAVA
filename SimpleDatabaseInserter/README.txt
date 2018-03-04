@@ -1,0 +1,1 @@
+SimpleDatabaseInserter is a simple JavaEE web application that works on localhost. It post username and password parameter from an HTML form with the getParameter() method, and after that INSERT the values to a MySQL database.  The MySQL connection is created  with JDBC Driver.
