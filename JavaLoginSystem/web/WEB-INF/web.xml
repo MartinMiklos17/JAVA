@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
+    version="2.4">
+
+    <display-name>LoginSystem2 Application</display-name>
+    <description>
+        This is a simple web application with a source code organization
+        based on the recommendations of the Application Developer's Guide.
+    </description>
+    <!--loginServlet-->
+    <servlet>
+        <servlet-name>loginServlet</servlet-name>
+        <servlet-class>loginPackage.loginServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>loginServlet</servlet-name>
+        <url-pattern>/loginServlet</url-pattern>
+    </servlet-mapping>
+    <!--registrationServlet-->
+    <servlet>
+        <servlet-name>registrationServlet</servlet-name>
+        <servlet-class>loginPackage.registrationServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>registrationServlet</servlet-name>
+        <url-pattern>/registrationServlet</url-pattern>
+    </servlet-mapping>
+    <!--uploadServlet-->
+    <servlet>
+        <servlet-name>uploadServlet</servlet-name>
+        <servlet-class>loginPackage.uploadServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>uploadServlet</servlet-name>
+        <url-pattern>/uploadServlet</url-pattern>
+    </servlet-mapping>
+    <!--logOutServlet-->
+    <servlet>
+        <servlet-name>logOutServlet</servlet-name>
+        <servlet-class>loginPackage.logOutServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>logOutServlet</servlet-name>
+        <url-pattern>/logOutServlet</url-pattern>
+    </servlet-mapping>
+</web-app>
