@@ -1,0 +1,8 @@
+This login system using Servlet to process information from forms,
+and dispatch to JSP pages. JSP pages diplay information in HTML context.
+
+Features:
+
+- Registration,
+- Login to existing Users,
+- logout from profilepage.
